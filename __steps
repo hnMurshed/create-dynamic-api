@@ -1,0 +1,44 @@
+-------------------
+basic server setup
+-------------------
+1. Create a folder (manually or mkdir)
+2. open command line to that folder
+3. npm init (or npm init -y to say for every question)
+4. create index.js
+5. npm install express
+
+-------------------
+Steps for express
+-------------------
+1. declare a veriable for require express
+2. declare app veriable
+3. declare port
+4. set app.get('/')
+5. listen your port
+6. node index.js
+7. check the brower to see your port
+
+----------------
+get
+----------------
+1. app.get()
+2. res.send()
+3. cors middleware
+
+-----------------
+post
+-----------------
+in cient side:
+1. fetch('url', call back function)
+2. inside the function, add an object of method, headers, and body
+3. .then(res => ...)
+4. .then(data => ...)
+in server side:
+1. app.post('/route', (req, res) => ...)
+
+--------------------------------------------------------------
+To restart your application after each change install Nodemon
+--------------------------------------------------------------
+1. npm install -g nodemon
+2. Add "start": "node index.js" and "start-dev": "nodemon index.js" to "script" object of package.json file.
+3. run the command nodemon index.js instead node index.js
